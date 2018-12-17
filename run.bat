@@ -3,7 +3,7 @@ rem Change to current directory
 cd /d %~dp0
 
 cls
-title Installing Safety Production Centern System For GD(SPROC4GD)
+title Installing Safety Production Centern System For GD(zhanyue)
 rem Use [skipTests] instead of [maven.test.skip], to "skip running tests, but still compile them".
 rem call mvn clean install -DskipTests=true
 if ERRORLEVEL 1 GOTO :ERR
@@ -19,7 +19,7 @@ rem set MAVEN_OPTS=%MAVEN_OPTS% -Dcom.sun.management.jmxremote.ssl=false -Dcom.s
 :START
 cls
 rem Run the [tomcat7:run] in Parent POM.xml directory. Now reloading changes from child projects without restalling is possible.
-title Running Safety Production Centern System For GD(SPROC4GD) in Tomcat 7
+title Running Safety Production Centern System For GD(zhanyue) in Tomcat 7
 rem Use Spring development profile to run on server. Should set [spring.profiles.active] or [spring.profiles.default] here to match database configurations.
 
 
@@ -32,5 +32,5 @@ GOTO :START
 
 :ERR
 echo.
-echo. Safety Production Centralization System For GD(SPROC4GD) Installation has failed. See above for details.
+echo. Safety Production Centralization System For GD(zhanyue) Installation has failed. See above for details.
 pause>nul
